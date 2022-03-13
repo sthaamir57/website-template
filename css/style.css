@@ -1,0 +1,145 @@
+/* ---------- Reset ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ---------- Navbar ---------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #2d5bab6d;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  padding: 1em 4em 1em 4em;
+  z-index: 999;
+}
+
+header .logo a {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 1.5em 0 1.5em;
+}
+
+nav ul li:last-child {
+  padding-right: 0em;
+}
+
+nav ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+header .logo a:hover,
+nav ul li a:hover {
+  color: #baccf3;
+  transition: color 0.25s ease;
+}
+
+/* ---------- Landing ---------- */
+
+.landing {
+  height: 48em;
+  position: relative;
+  background-image: url(../assets/landing-bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.landing::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(37, 50, 222);
+  background: linear-gradient(352.33deg, #1cd8e9cc -21.34%, #2532decc 121.34%);
+  z-index: 1;
+}
+
+.landing-cta-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  z-index: 30;
+}
+
+.landing-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.landing-cta h2 {
+  font-size: 2rem;
+}
+
+.landing-cta p {
+  font-size: 1rem;
+  padding: 1em 0 4em 0;
+}
+
+.landing-cta .button a {
+  text-transform: uppercase;
+  padding: 1.25em 2.5em;
+  border-radius: 2em;
+  border: thin solid #fff;
+  background-color: #fff;
+  color: #667afb;
+}
+
+.landing-cta .button a:hover {
+  color: #fff;
+  background-color: #f3f7ff68;
+  transition: background-color 0.35s ease;
+}
+
+.bgImg {
+  position: absolute;
+  bottom: -2%;
+  width: 35rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 20;
+}
+
+#landing-overlay {
+  position: absolute;
+  bottom: -7%;
+  left: -8%;
+  z-index: 10;
+}
+
+.scroll {
+  height: 100vh;
+}
